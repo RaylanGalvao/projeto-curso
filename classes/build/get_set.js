@@ -19,5 +19,10 @@ class Jogo {
     }
 }
 const GTA5 = new Jogo("192.165.5.10");
-GTA5.setServidorIp = "192.165.5.10";
+try {
+    GTA5.setServidorIp = "192.165.5.10";
+}
+catch (error) {
+    console.log("ERROR", error);
+}
 console.log(GTA5.getServidorIp);
