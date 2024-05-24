@@ -1,5 +1,5 @@
 
-type DadosConta{
+type DadosConta = {
     nome: String
     numero: String
     endereço: String
@@ -22,7 +22,8 @@ class PessoaFisica extends ContaBanco{
 class PessoaJuridica extends ContaBanco{
     abrirConta(dados: DadosConta): boolean {
         console.log("=================================================")
-        console.log(`nova conta fisica criada com sucesso ${dados.nome}`)
+        console.log(`nova conta juridica 
+         criada com sucesso ${dados.nome}`)
         console.log("=================================================")
         return true
     }
@@ -36,10 +37,10 @@ maria.abrirConta({
     endereço: "rua tuidosbangostusdusbagos",
 })
 
-const sucodefrutas = new PessoaJuridica()
+const sujeito = new PessoaJuridica()
 
-sucodefrutas.abrirConta({
-    nome: "sujieto", 
-    numero:"5689",
-    endereço:"carinhaquemoralogoali",
+sujeito.abrirConta({
+    nome:"sujeito",
+    numero:"987",
+    endereço:"carinha que mora logo ali",
 })
