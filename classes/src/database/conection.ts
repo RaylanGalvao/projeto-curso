@@ -1,9 +1,9 @@
-type Conection = {
-    id: string
-    nome: string
+ type Conection = {
+    ip1: string
+    nome50: string
 }
-export function connection(info: Conection){
-    console.log("conecção realizada com sucesso", info.id)
+export function connection(info: Conection): boolean{
+    console.log("conecção realizada com sucesso", info.ip1)
     return true
 }
 

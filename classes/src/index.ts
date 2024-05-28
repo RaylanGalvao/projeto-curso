@@ -1,11 +1,13 @@
 //busca meu arquivo que conecta com o banco de dados
 import { connection, statusConection } from "./database/conection";
-import status from './database/conection';
-
-function acessarSistemas(){
-    connection({id:"123.456. 789.10", nome:"mysql",)}
+import status, { resetaBanco } from './database/aplicativo'
+function acessarSistema(){
+    connection({ip1:"12354", nome50:"mysql"})
 }
-acessarSistemas()
+acessarSistema()
+
 statusConection()
 
 status()
+
+resetaBanco()
